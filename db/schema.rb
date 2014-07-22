@@ -14,6 +14,8 @@
 ActiveRecord::Schema.define(version: 20140722193108) do
 
   create_table "articles", force: true do |t|
+    t.text     "title"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
