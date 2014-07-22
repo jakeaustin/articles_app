@@ -1,5 +1,9 @@
 class ArticlesController < ApplicationController
 
+  def default_serializer_options
+    {root: false}
+  end
+
   # only respond to requests for JSON
   respond_to :json
 
